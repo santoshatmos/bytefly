@@ -2091,21 +2091,71 @@ button,
     font-size: 1.125em; }
   #header .icons {
     text-align: right; }
+  #header .site-tabs {
+    display: flex;
+    align-items: center;
+    gap: 1.75em;
+    justify-content: flex-start;
+    white-space: nowrap; }
+    #header .site-tabs a {
+      border-bottom: 0;
+      color: #7f888f;
+      font-family: "Roboto Slab", serif;
+      font-size: 1.125em;
+      font-weight: 700;
+      padding: 0.4em 0;
+      position: relative; }
+      #header .site-tabs a:hover,
+      #header .site-tabs a.active {
+        color: #3d4449; }
+      #header .site-tabs a.active:after {
+        background: #2f80ed;
+        bottom: -0.3em;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0; }
   @media screen and (max-width: 1680px) {
     #header {
       padding-top: 5em; } }
   @media screen and (max-width: 736px) {
     #header {
-      padding-top: 6.5em; }
-      #header .logo {
-        font-size: 1.25em;
-        margin: 0; }
+      padding: 6.5em 0 3.75em 0; }
       #header .icons {
         height: 5em;
         line-height: 5em;
         position: absolute;
         right: -0.5em;
         top: 0; } }
+  @media screen and (max-width: 736px) {
+    #header .site-tabs {
+      bottom: 0.75em;
+      gap: 0.9em;
+      justify-content: flex-start;
+      left: 0;
+      position: absolute; }
+      #header .site-tabs a {
+        font-size: 0.9em; } }
+
+#header .lang-switch {
+  display: inline-flex;
+  margin-left: 12px; }
+  #header .lang-switch select {
+    background: #fff;
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+    color: #3d4449;
+    cursor: pointer;
+    font-size: 13px;
+    height: 34px;
+    min-width: 104px;
+    padding: 0 12px; }
+
+.affiliate-disclosure {
+  color: #7f888f;
+  font-size: 0.85em;
+  margin-top: 2em; }
 
 /* Banner */
 #banner {
@@ -2116,6 +2166,8 @@ button,
   display: flex; }
   #banner h1 {
     margin-top: -0.125em; }
+  #banner.surfshark-banner .content {
+    width: 100%; }
   #banner .content {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;

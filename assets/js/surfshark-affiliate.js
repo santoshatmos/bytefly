@@ -1,0 +1,6 @@
+/* Update this one value when the Surfshark Affiliate destination changes. */
+const SURFSHARK_AFFILIATE_URL = 'https://links.surfsharkbiz.com/s/c/gXdqhdNvzYnqCUDYDTkWOahSJEMs7EZsDG3UWGOf8hJ6cYbLKgomNdC4oNVZO7DoHLbdjVrtdofL84u0tV7GhOvdYj1BIQOIp4EgWs7tPUPEBkLUzjaoEa6z_prUAnmzDlA3YWSlpIY5x30v8ZjnnJt5YWH6FG9z8KiXh8tJpoGQflDOTteJebDDeBikA5Pr-T_Ja8vUqrAX-WAr4PjLOwWnAvd7MLFHNTY9jT-wF4uL4rWEktx5TVxUo3t-UAy6IB0BjMkX3lvwlgGxTHwYEOxDW-qwIXLWH8W8YGS0slX9C4g21IkQRsn3Nvjm7FvM5q0vIzwRpd-8YAxPebiHO51fKNmqcj1_lO_o-NTKENiLpd7HBD5qHuSJgq4u9qe7Y-D5ZaVTSKAPQ1go-bjzfd2vrC0hkYNXcD9W_tHLM2TO0E6HmLTk24fx3wxVp5bLiLpqGHc/nDGw2FPHH124i1aLVBpK9UmID8oq3mXl/16';
+
+document.querySelectorAll('[data-surfshark-cta]').forEach(function (link) {
+	link.href = SURFSHARK_AFFILIATE_URL;
+});
